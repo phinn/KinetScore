@@ -43,6 +43,9 @@
       <CommandLineArguments>
       </CommandLineArguments>
    </TestAction>
+         <StoreKitConfigurationFileReference
+         identifier = "../../../Products/KinetScore.storekit">
+      </StoreKitConfigurationFileReference>
    <LaunchAction
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -53,9 +56,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <StoreKitConfigurationFileReference
-         identifier = "../../Products/KinetScore.storekit">
-      </StoreKitConfigurationFileReference>
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference

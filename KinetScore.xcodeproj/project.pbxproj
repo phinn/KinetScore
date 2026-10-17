@@ -18,6 +18,7 @@
 		98325AFBE266DF4FADCCAA5E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96178ADC4C4CD5EFD7D1E216 /* Theme.swift */; };
 		99BC5E820232FCE175064C4A /* MetroEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FBC7A81E6ADCC5F144FE8 /* MetroEngine.swift */; };
 		B80EE528E63EBECE3C474029 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71102816530B5C0FDCBE13AA /* RootView.swift */; };
+		CFA7963533A243B401D6A28A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008326CB6BD2FA09CB880A62 /* Assets.xcassets */; };
 		D32002C565F5B00534F7FAE5 /* ScorePager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88671DE3DC68EF9D29AC551 /* ScorePager.swift */; };
 		EBF857AB97D91F0F21A6DE95 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F16B4D6D25B7ABC2D6558B /* LibraryView.swift */; };
 		EDD851AFF3FF981D5CC5F979 /* ScoreEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C05116099163DF30EBAEDBA /* ScoreEngine.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		008326CB6BD2FA09CB880A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C05E604F7C685457CE99A78 /* StoreGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGate.swift; sourceTree = "<group>"; };
 		2F5FDF192009FC9803AA90E6 /* CoverState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverState.swift; sourceTree = "<group>"; };
 		34DECE7E281AF27E1EA16728 /* ScoreCoverCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCoverCard.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				D8D83B15D2085F084AD9E03B /* .gitkeep */,
+				008326CB6BD2FA09CB880A62 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -102,6 +105,7 @@
 			buildConfigurationList = BF957118C44D82C72E7BF0B7 /* Build configuration list for PBXNativeTarget "KinetScore" */;
 			buildPhases = (
 				3F661AACFBC8BD62ACCE2913 /* Sources */,
+				F96182F10891B6EAD57A45CD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -147,6 +151,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F96182F10891B6EAD57A45CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFA7963533A243B401D6A28A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F661AACFBC8BD62ACCE2913 /* Sources */ = {

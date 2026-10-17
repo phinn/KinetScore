@@ -45,9 +45,20 @@ struct ScoreReaderView: View {
                 }
             }
         }
-        .onAppear {
+        .task {
             engine.open(score)
             metro.bpm = score.bpm
+            // 截图素材 harness:-kinetscore.page N 冷启动后直接定位页
+            let args = ProcessInfo.processInfo.arguments
+            if let i = args.firstIndex(of: "-kinetscore.page"),
+               i + 1 < args.count, let p = Int(args[i + 1]),
+               p >= 0 {
+                // 等待 PDF 文档加载完成
+                for _ in 0..<30 where engine.pageCount == 0 {
+                    try? await Task.sleep(nanoseconds: 100_000_000)
+                }
+                engine.setPage(p)
+            }
             cover.activate(score: score, metro: metro)
         }
         .onDisappear {

@@ -10,6 +10,20 @@ struct RootView: View {
             LibraryView(library: library, openedScore: $openedScore, cover: cover)
         }
         .modifier(ScoreCoverSceneAccessory(state: cover))
+        // 截图素材 harness:-kinetscore.openIndex N 冷启动直进阅读器
+        .task {
+            let args = ProcessInfo.processInfo.arguments
+            guard let i = args.firstIndex(of: "-kinetscore.openIndex"),
+                  i + 1 < args.count,
+                  let idx = Int(args[i + 1])
+            else { return }
+            // 等待曲库加载完成
+            for _ in 0..<40 where library.scores.isEmpty {
+                try? await Task.sleep(nanoseconds: 100_000_000)
+            }
+            guard idx >= 0, idx < library.scores.count else { return }
+            openedScore = library.scores[idx]
+        }
     }
 }
 

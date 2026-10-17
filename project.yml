@@ -1,5 +1,6 @@
 name: KinetScore
 options:
+  postGenCommand: python3 scripts/patch_storekit_scheme.py
   bundleIdPrefix: com.kinet
   deploymentTarget:
     iOS: "26.0"
