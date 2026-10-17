@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19EE20C6A330B676E4226FB0 /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA4C9340DFE953607733C02 /* LibraryModel.swift */; };
+		22F803A9FC662060F372982C /* ReaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6BE6B918389F3FEC76ECDD /* ReaderContainer.swift */; };
+		55C016E0CB2BC228B86249DF /* HingeMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B284E9A071EC998931A9C /* HingeMonitor.swift */; };
+		57E2ACB0E3D68A7042BCE067 /* KinetScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACA46419931AF320A1ED6E5 /* KinetScoreApp.swift */; };
+		711C62930DC05543AE2ACB53 /* ScoreCoverCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DECE7E281AF27E1EA16728 /* ScoreCoverCard.swift */; };
+		91586027B16CCE945E8B65DA /* CoverState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5FDF192009FC9803AA90E6 /* CoverState.swift */; };
+		98325AFBE266DF4FADCCAA5E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96178ADC4C4CD5EFD7D1E216 /* Theme.swift */; };
+		99BC5E820232FCE175064C4A /* MetroEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2FBC7A81E6ADCC5F144FE8 /* MetroEngine.swift */; };
+		B80EE528E63EBECE3C474029 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71102816530B5C0FDCBE13AA /* RootView.swift */; };
+		D32002C565F5B00534F7FAE5 /* ScorePager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88671DE3DC68EF9D29AC551 /* ScorePager.swift */; };
+		EBF857AB97D91F0F21A6DE95 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F16B4D6D25B7ABC2D6558B /* LibraryView.swift */; };
+		EDD851AFF3FF981D5CC5F979 /* ScoreEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C05116099163DF30EBAEDBA /* ScoreEngine.swift */; };
+		EF04A19DA5D360C4E7A352F4 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF5B26F56958E88DC1894E8 /* Score.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F5FDF192009FC9803AA90E6 /* CoverState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverState.swift; sourceTree = "<group>"; };
+		34DECE7E281AF27E1EA16728 /* ScoreCoverCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCoverCard.swift; sourceTree = "<group>"; };
+		477B284E9A071EC998931A9C /* HingeMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HingeMonitor.swift; sourceTree = "<group>"; };
+		4E6BE6B918389F3FEC76ECDD /* ReaderContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderContainer.swift; sourceTree = "<group>"; };
+		5460A5A409ED3D45560D7F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6ACA46419931AF320A1ED6E5 /* KinetScoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KinetScoreApp.swift; sourceTree = "<group>"; };
+		71102816530B5C0FDCBE13AA /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		7A2FBC7A81E6ADCC5F144FE8 /* MetroEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetroEngine.swift; sourceTree = "<group>"; };
+		96178ADC4C4CD5EFD7D1E216 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		9C05116099163DF30EBAEDBA /* ScoreEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreEngine.swift; sourceTree = "<group>"; };
+		A5F16B4D6D25B7ABC2D6558B /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		D86F48A3822F26B7A8D1707A /* KinetScore.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = KinetScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88671DE3DC68EF9D29AC551 /* ScorePager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePager.swift; sourceTree = "<group>"; };
+		D8D83B15D2085F084AD9E03B /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		EDF5B26F56958E88DC1894E8 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		FEA4C9340DFE953607733C02 /* LibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3A56D072C0D391D640B05EB0 = {
+			isa = PBXGroup;
+			children = (
+				E60C3B01287461368423B662 /* KinetScore */,
+				B5DF85A3CEA80F73932F2FC1 /* Resources */,
+				7967C79A80A0CB9225C6D798 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7967C79A80A0CB9225C6D798 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D86F48A3822F26B7A8D1707A /* KinetScore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5DF85A3CEA80F73932F2FC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D8D83B15D2085F084AD9E03B /* .gitkeep */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E60C3B01287461368423B662 /* KinetScore */ = {
+			isa = PBXGroup;
+			children = (
+				2F5FDF192009FC9803AA90E6 /* CoverState.swift */,
+				477B284E9A071EC998931A9C /* HingeMonitor.swift */,
+				5460A5A409ED3D45560D7F3E /* Info.plist */,
+				6ACA46419931AF320A1ED6E5 /* KinetScoreApp.swift */,
+				FEA4C9340DFE953607733C02 /* LibraryModel.swift */,
+				A5F16B4D6D25B7ABC2D6558B /* LibraryView.swift */,
+				7A2FBC7A81E6ADCC5F144FE8 /* MetroEngine.swift */,
+				4E6BE6B918389F3FEC76ECDD /* ReaderContainer.swift */,
+				71102816530B5C0FDCBE13AA /* RootView.swift */,
+				EDF5B26F56958E88DC1894E8 /* Score.swift */,
+				34DECE7E281AF27E1EA16728 /* ScoreCoverCard.swift */,
+				9C05116099163DF30EBAEDBA /* ScoreEngine.swift */,
+				D88671DE3DC68EF9D29AC551 /* ScorePager.swift */,
+				96178ADC4C4CD5EFD7D1E216 /* Theme.swift */,
+			);
+			path = KinetScore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4CB07E02D380E05AAFD40AC /* KinetScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF957118C44D82C72E7BF0B7 /* Build configuration list for PBXNativeTarget "KinetScore" */;
+			buildPhases = (
+				3F661AACFBC8BD62ACCE2913 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KinetScore;
+			packageProductDependencies = (
+			);
+			productName = KinetScore;
+			productReference = D86F48A3822F26B7A8D1707A /* KinetScore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42BA1E44B41DB96A6E38F050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E4CB07E02D380E05AAFD40AC = {
+						DevelopmentTeam = M92UKS6NA2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C3F646F80F2CCAED3AD81737 /* Build configuration list for PBXProject "KinetScore" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 3A56D072C0D391D640B05EB0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7967C79A80A0CB9225C6D798 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4CB07E02D380E05AAFD40AC /* KinetScore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F661AACFBC8BD62ACCE2913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91586027B16CCE945E8B65DA /* CoverState.swift in Sources */,
+				55C016E0CB2BC228B86249DF /* HingeMonitor.swift in Sources */,
+				57E2ACB0E3D68A7042BCE067 /* KinetScoreApp.swift in Sources */,
+				19EE20C6A330B676E4226FB0 /* LibraryModel.swift in Sources */,
+				EBF857AB97D91F0F21A6DE95 /* LibraryView.swift in Sources */,
+				99BC5E820232FCE175064C4A /* MetroEngine.swift in Sources */,
+				22F803A9FC662060F372982C /* ReaderContainer.swift in Sources */,
+				B80EE528E63EBECE3C474029 /* RootView.swift in Sources */,
+				EF04A19DA5D360C4E7A352F4 /* Score.swift in Sources */,
+				711C62930DC05543AE2ACB53 /* ScoreCoverCard.swift in Sources */,
+				EDD851AFF3FF981D5CC5F979 /* ScoreEngine.swift in Sources */,
+				D32002C565F5B00534F7FAE5 /* ScorePager.swift in Sources */,
+				98325AFBE266DF4FADCCAA5E /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9956FC3B2288D630EEC8713B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KinetScore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinet.score.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9DC498FCF5DB40E963F80647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = M92UKS6NA2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A56CCBBC31CF8A65740FA352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = M92UKS6NA2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A9A45C107462560120550BDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KinetScore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinet.score.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF957118C44D82C72E7BF0B7 /* Build configuration list for PBXNativeTarget "KinetScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A45C107462560120550BDA /* Debug */,
+				9956FC3B2288D630EEC8713B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C3F646F80F2CCAED3AD81737 /* Build configuration list for PBXProject "KinetScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A56CCBBC31CF8A65740FA352 /* Debug */,
+				9DC498FCF5DB40E963F80647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42BA1E44B41DB96A6E38F050 /* Project object */;
+}

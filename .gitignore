@@ -1,0 +1,16 @@
+# Xcode
+DerivedData/
+build/
+*.xcuserdatad/
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# macOS
+.DS_Store
+
+# 临时产物
+*.ipa
+*.dSYM.zip
+release/screenshots/raw/
+artifacts/
