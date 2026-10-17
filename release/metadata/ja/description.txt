@@ -1,0 +1,36 @@
+紙の楽譜を開くように。
+
+KinetScore は iPhone Duo を見開き楽譜スタンドに変えます。PDF の楽譜を読み込めば、広げた大画面に見開きで表示——ページ送り、半開き練習モード、メトロノームを内蔵。
+
+見開き表示
+広げると左右に見開きで表示。印刷された楽譜そのまま。タップでページ送り。
+
+半開き練習モード
+画面を半分に折ると:上に楽譜、下にコントロール。演奏中に誤ってページがめくれる心配はありません。
+
+内蔵メトロノーム
+楽譜から離れずにビートを開始。コンソールバーでワンタップ調整。
+
+閉じるとしおりカード
+閉じると外画面に曲名・現在ページ・テンポを表示——開き直せばすぐ続きから。
+
+プライバシー完備
+すべて端末内に保存。アカウント不要、トラッキングなし、クラウドなし。
+
+内蔵 5 曲は無料。買い切りで全機能をアンロック。
+
+## What's New(1.0 首发用)
+- en: Initial release. Two-page spread, half-open practice mode, metronome and cover bookmark.
+- zh-Hans: 首个版本:双页对开、半开练习模式、节拍器与合盖书签。
+- zh-Hant: 首個版本:雙頁對開、半開練習模式、節拍器與闔蓋書籤。
+- ja: 初リリース。見開き表示、半開き練習モード、メトロノーム、しおりカード付き。
+
+## 审核备注 Review Notes(4.3 风险对策)
+KinetScore is a PDF sheet-music reader purpose-built for iPhone Duo's dual-display postures (folded / half-open / unfolded). It is functionally distinct from template apps: score library, spread pagination, hinge-aware console and SceneAccessory bookmark are custom-built. Demo account not required — app ships with 5 public-domain sample scores and supports user-imported PDFs via Files.
+
+## 支持 URL / 营销 URL
+- support: https://phinn.github.io/kinetscore/support.html(同 DuoFolio docs_site 模式)
+- marketing: (可选,同上)
+
+## 版权
+© 2026 Phinn. All rights reserved.
