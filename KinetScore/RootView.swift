@@ -2,33 +2,44 @@ import SwiftUI
 
 struct RootView: View {
     @State private var library = LibraryModel()
+    @State private var cover = CoverState()
     @State private var openedScore: Score?
 
     var body: some View {
         NavigationStack {
-            LibraryView(library: library, openedScore: $openedScore)
+            LibraryView(library: library, openedScore: $openedScore, cover: cover)
         }
-        .onAppear {
-            #if DEBUG
-            // -kinetscore.openIndex N 冷启动直开(harness,只读一次)
-            let args = ProcessInfo.processInfo.arguments
-            if let idx = args.firstIndex(of: "-kinetscore.openIndex"),
-               args.count > idx + 1,
-               let i = Int(args[idx + 1]),
-               library.scores.indices.contains(i) {
-                openedScore = library.scores[i]
+        .modifier(ScoreCoverSceneAccessory(state: cover))
+    }
+}
+
+/// 合盖书签卡 accessory(iOS 27.1 SceneAccessoryContent + ExternalNonInteractiveAccessory):
+/// 有活动阅读会话时 isEnabled=true,系统只在合盖(外屏呈现时机)才真正显示。
+@available(iOS 27.1, *)
+struct ScoreCoverAccessory: SceneAccessoryContent {
+    let state: CoverState
+
+    var body: some SceneAccessoryContent {
+        ExternalNonInteractiveAccessory(isEnabled: Binding(get: { state.isActive }, set: { _ in })) {
+            ScoreCoverCard(cover: state)
+                .padding(20)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color(white: 0.08))
+        }
+    }
+}
+
+/// ViewModifier 包一层 #available,对旧系统安全
+struct ScoreCoverSceneAccessory: ViewModifier {
+    let state: CoverState
+
+    func body(content: Content) -> some View {
+        if #available(iOS 27.1, *) {
+            content.sceneAccessory {
+                ScoreCoverAccessory(state: state)
             }
-            #endif
-        }
-        .onOpenURL { url in
-            #if DEBUG
-            // kinetscore://open?index=N 烟囱深链(截图 harness)
-            guard url.scheme == "kinetscore", url.host == "open",
-                  let comps = URLComponents(url: url, resolvingAgainstBaseURL: false),
-                  let raw = comps.queryItems?.first(where: { $0.name == "index" })?.value,
-                  let i = Int(raw), library.scores.indices.contains(i) else { return }
-            openedScore = library.scores[i]
-            #endif
+        } else {
+            content
         }
     }
 }
