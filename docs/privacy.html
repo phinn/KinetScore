@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KinetScore — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Hiragino Sans", "Microsoft YaHei", sans-serif;
+         background: #14100a; color: #efe9dd; line-height: 1.8; padding: 48px 20px 80px; }
+  .wrap { max-width: 780px; margin: 0 auto; }
+  h1 { font-size: 30px; margin-bottom: 6px; }
+  .sub { color: #b7a987; margin-bottom: 34px; }
+  h2 { font-size: 20px; margin: 34px 0 12px; color: #f5b44a; }
+  p, li { color: #d9d2c4; font-size: 15px; }
+  ul { padding-left: 22px; margin: 8px 0; }
+  .card { background: #1d1812; border: 1px solid #2e2618; border-radius: 14px; padding: 22px 26px; margin-top: 14px; }
+  .langbar { display: flex; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
+  .langbar button { background: #241d12; color: #c8bfa9; border: 1px solid #3a2f1c; border-radius: 20px;
+                    padding: 7px 18px; cursor: pointer; font-size: 14px; }
+  .langbar button.on { background: #f5b44a; color: #241b0e; border-color: #f5b44a; }
+  section[data-lang] { display: none; }
+  section[data-lang].show { display: block; }
+  footer { margin-top: 60px; color: #7d7462; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>KinetScore</h1>
+  <p class="sub">Privacy Policy · 隐私政策</p>
+
+  <div class="langbar">
+    <button onclick="sw('zh')" id="b-zh" class="on">中文</button>
+    <button onclick="sw('en')" id="b-en">English</button>
+    <button onclick="sw('ja')" id="b-ja">日本語</button>
+  </div>
+
+  <section data-lang="zh" class="show">
+    <div class="card">
+      <p>KinetScore 不收集任何数据。</p>
+      <ul>
+        <li>不收集:无账号系统、无分析 SDK、无广告、无追踪器</li>
+        <li>存储:你导入的乐谱与阅读进度只保存在你的设备本地</li>
+        <li>网络:仅购买/恢复解锁时连接 Apple App Store,应用本身不向任何服务器传输数据</li>
+        <li>权限:不申请定位、通讯录、麦克风、相机</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>联系方式</h2>
+      <p>phinn@kinet.app</p>
+    </div>
+  </section>
+
+  <section data-lang="en">
+    <div class="card">
+      <p>KinetScore collects no data.</p>
+      <ul>
+        <li>No accounts, no analytics SDKs, no ads, no trackers</li>
+        <li>Imported scores and reading progress stay on your device only</li>
+        <li>Network is used solely for purchases/restores via Apple App Store; the app sends nothing to any server</li>
+        <li>No location, contacts, microphone or camera permissions</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Contact</h2>
+      <p>phinn@kinet.app</p>
+    </div>
+  </section>
+
+  <section data-lang="ja">
+    <div class="card">
+      <p>KinetScore は一切のデータを収集しません。</p>
+      <ul>
+        <li>アカウント登録なし・解析 SDK なし・広告なし・トラッキングなし</li>
+        <li>読み込んだ楽譜と閲覧位置は端末内にのみ保存されます</li>
+        <li>通信は Apple App Store での購入・復元時のみ。アプリ本体はサーバーへ何も送信しません</li>
+        <li>位置情報・連絡先・マイク・カメラの権限は要求しません</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>お問い合わせ</h2>
+      <p>phinn@kinet.app</p>
+    </div>
+  </section>
+
+  <footer>© 2026 Phinn. All rights reserved.</footer>
+</div>
+<script>
+function sw(l){
+  document.querySelectorAll('section[data-lang]').forEach(s=>s.classList.remove('show'));
+  document.querySelector(`section[data-lang="${l}"]`).classList.add('show');
+  document.querySelectorAll('.langbar button').forEach(b=>b.classList.remove('on'));
+  document.getElementById('b-'+l).classList.add('on');
+}
+</script>
+</body>
+</html>
