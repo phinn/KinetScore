@@ -11,7 +11,8 @@ struct ScoreReaderView: View {
 
     @State private var engine = ScoreEngine()
     @State private var metro = MetroEngine()
-    @State private var cover = CoverState()
+    var cover: CoverState
+    @State private var showUnlock = false
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
@@ -22,10 +23,14 @@ struct ScoreReaderView: View {
                     .frame(maxHeight: .infinity)
 
                 if posture == .halfOpened && engine.settings.consoleInHalfOpen {
-                    ConsoleBar(engine: engine, metro: metro)
+                    ConsoleBar(engine: engine, metro: metro, showUnlock: $showUnlock)
                         .frame(height: geo.size.height * 0.30)
                         .transition(.move(edge: .bottom))
                 }
+            }
+            .sheet(isPresented: $showUnlock) {
+                UnlockSheet()
+                    .presentationDetents([.medium])
             }
         }
         .background(engine.settings.theme.bg)
@@ -78,6 +83,7 @@ struct ScoreReaderView: View {
 struct ConsoleBar: View {
     @Bindable var engine: ScoreEngine
     @Bindable var metro: MetroEngine
+    @Binding var showUnlock: Bool
 
     var body: some View {
         HStack(spacing: 16) {
@@ -105,23 +111,45 @@ struct ConsoleBar: View {
             Divider()
                 .frame(height: 30)
 
+            Button {
+                metro.toggle()
+            } label: {
+                Image(systemName: metro.isRunning ? "stop.circle.fill" : "play.circle.fill")
+                    .font(.title2)
+                    .foregroundStyle(metro.isRunning ? Color.red.opacity(0.9) : Color.green.opacity(0.85))
+            }
+            .buttonStyle(.plain)
+
             Stepper(value: Binding(
                 get: { metro.bpm },
-                set: { metro.setBPM($0, capped: !StoreGate.unlocked) }
+                set: { metro.setBPM($0, capped: !StoreGate.shared.unlocked) }
             ), in: 30...250, step: 4) {
                 Text("\(metro.bpm) BPM")
                     .font(.subheadline.monospacedDigit())
             }
             .labelsHidden()
             .frame(width: 110)
+            .onTapGesture {
+                if !StoreGate.shared.unlocked { showUnlock = true }
+            }
+
+            if StoreGate.shared.unlocked {
+                Image(systemName: "crown.fill")
+                    .font(.caption)
+                    .foregroundStyle(engine.settings.theme.accent)
+            } else {
+                Button {
+                    showUnlock = true
+                } label: {
+                    Image(systemName: "lock.fill")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                .buttonStyle(.plain)
+            }
         }
         .padding(.horizontal, 18)
         .frame(maxWidth: .infinity)
         .background(engine.settings.theme.panel)
     }
-}
-
-/// V1 免费闸:节拍器 60–120 限速;买断后全速。StoreKit 2 接入在 D6+,先占位。
-enum StoreGate {
-    static var unlocked: Bool { UserDefaults.standard.bool(forKey: "score.unlocked") }
 }

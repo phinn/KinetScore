@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		19EE20C6A330B676E4226FB0 /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA4C9340DFE953607733C02 /* LibraryModel.swift */; };
 		22F803A9FC662060F372982C /* ReaderContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6BE6B918389F3FEC76ECDD /* ReaderContainer.swift */; };
+		4E1D81F64D2CD507B5F6DC48 /* UnlockSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31884401116EDFFF5980FEA /* UnlockSheet.swift */; };
 		55C016E0CB2BC228B86249DF /* HingeMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477B284E9A071EC998931A9C /* HingeMonitor.swift */; };
 		57E2ACB0E3D68A7042BCE067 /* KinetScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACA46419931AF320A1ED6E5 /* KinetScoreApp.swift */; };
+		6BD7FB623568A32106BC43C1 /* StoreGate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C05E604F7C685457CE99A78 /* StoreGate.swift */; };
 		711C62930DC05543AE2ACB53 /* ScoreCoverCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DECE7E281AF27E1EA16728 /* ScoreCoverCard.swift */; };
 		91586027B16CCE945E8B65DA /* CoverState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5FDF192009FC9803AA90E6 /* CoverState.swift */; };
 		98325AFBE266DF4FADCCAA5E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96178ADC4C4CD5EFD7D1E216 /* Theme.swift */; };
@@ -23,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C05E604F7C685457CE99A78 /* StoreGate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGate.swift; sourceTree = "<group>"; };
 		2F5FDF192009FC9803AA90E6 /* CoverState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverState.swift; sourceTree = "<group>"; };
 		34DECE7E281AF27E1EA16728 /* ScoreCoverCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCoverCard.swift; sourceTree = "<group>"; };
 		477B284E9A071EC998931A9C /* HingeMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HingeMonitor.swift; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		96178ADC4C4CD5EFD7D1E216 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		9C05116099163DF30EBAEDBA /* ScoreEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreEngine.swift; sourceTree = "<group>"; };
 		A5F16B4D6D25B7ABC2D6558B /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		D31884401116EDFFF5980FEA /* UnlockSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockSheet.swift; sourceTree = "<group>"; };
 		D86F48A3822F26B7A8D1707A /* KinetScore.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = KinetScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D88671DE3DC68EF9D29AC551 /* ScorePager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePager.swift; sourceTree = "<group>"; };
 		D8D83B15D2085F084AD9E03B /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
@@ -83,7 +87,9 @@
 				34DECE7E281AF27E1EA16728 /* ScoreCoverCard.swift */,
 				9C05116099163DF30EBAEDBA /* ScoreEngine.swift */,
 				D88671DE3DC68EF9D29AC551 /* ScorePager.swift */,
+				0C05E604F7C685457CE99A78 /* StoreGate.swift */,
 				96178ADC4C4CD5EFD7D1E216 /* Theme.swift */,
+				D31884401116EDFFF5980FEA /* UnlockSheet.swift */,
 			);
 			path = KinetScore;
 			sourceTree = "<group>";
@@ -159,7 +165,9 @@
 				711C62930DC05543AE2ACB53 /* ScoreCoverCard.swift in Sources */,
 				EDD851AFF3FF981D5CC5F979 /* ScoreEngine.swift in Sources */,
 				D32002C565F5B00534F7FAE5 /* ScorePager.swift in Sources */,
+				6BD7FB623568A32106BC43C1 /* StoreGate.swift in Sources */,
 				98325AFBE266DF4FADCCAA5E /* Theme.swift in Sources */,
+				4E1D81F64D2CD507B5F6DC48 /* UnlockSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

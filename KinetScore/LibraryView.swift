@@ -5,6 +5,7 @@ import UniformTypeIdentifiers
 struct LibraryView: View {
     @State var library: LibraryModel
     @Binding var openedScore: Score?
+    var cover: CoverState
     @State private var importError: String?
 
     var body: some View {
@@ -38,7 +39,7 @@ struct LibraryView: View {
                 }
             }
             .navigationDestination(item: $openedScore) { score in
-                ScoreReaderView(score: score, library: library)
+                ScoreReaderView(score: score, library: library, cover: cover)
             }
         }
     }

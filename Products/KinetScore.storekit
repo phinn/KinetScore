@@ -1,0 +1,39 @@
+{
+  "identifier" : "BF3E1F1A-9C2E-4A4B-8F1D-7E5C0A2D3B6C",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "6B2A9D7E-1F3C-4E5A-8B90-C1D2E3F4A5B6",
+      "localizations" : [
+        {
+          "description" : "节拍器不限速、对开双页、无限曲库。一次买断。",
+          "displayName" : "KinetScore 完整版",
+          "locale" : "zh_CN"
+        },
+        {
+          "description" : "Unlimited metronome, two-page spread, unlimited scores. One-time purchase.",
+          "displayName" : "KinetScore Full Unlock",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.kinet.score.unlock",
+      "recurringSubscriptionPeriod" : "P1M",
+      "referenceName" : "KinetScore Full Unlock",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

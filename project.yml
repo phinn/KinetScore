@@ -48,6 +48,10 @@ targets:
             CFBundleURLSchemes: [kinetscore]
         UIBackgroundModes:
           - audio
+    scheme:
+      testTargets: []
+      run:
+        storeKitConfiguration: Products/KinetScore.storekit
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.kinet.score.app
